@@ -7,7 +7,7 @@ quantified buffer.
 Data: national wind only, from Elexon BMRS. Actuals from `FUELHH` (fuelType `WIND`), forecasts
 from `WINDFOR`. Delivery days: January 2026.
 
-**Live app:** <vercel-url>
+**Live app:** [<vercel-url>](https://aajgyeb.vercel.app/)
 **Demo video:** <unlisted-youtube-url>
 
 ## AI tools disclosure
