@@ -1,0 +1,12 @@
+@"
+.venv/
+__pycache__/
+node_modules/
+.env
+.DS_Store
+backend/data/chunks/
+frontend/dist/
+.vercel/
+.pytest_cache/
+.ruff_cache/
+"@ | Set-Content .gitignore
