@@ -9,8 +9,6 @@ from `WINDFOR`. Delivery days: January 2026.
 
 **Live app:** https://aajgyeb.vercel.app/
 
-**Demo video:** <unlisted-youtube-url>
-
 ## AI tools disclosure
 
 This project was built with the assistance of an AI tool (Anthropic's Claude) for planning, code
