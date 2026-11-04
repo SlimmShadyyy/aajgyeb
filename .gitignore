@@ -9,4 +9,4 @@ frontend/dist/
 .vercel/
 .pytest_cache/
 .ruff_cache/
-"@ | Set-Content .gitignore
+"@ | Set-Content .gitignore.venv-test/

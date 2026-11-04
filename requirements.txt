@@ -1,0 +1,6 @@
+cd D:\ajskd
+@"
+fastapi==0.162.0
+pandas==3.1.0
+numpy==2.5.4
+"@ | Set-Content requirements.txt

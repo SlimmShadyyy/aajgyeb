@@ -19,9 +19,12 @@ app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["GET"], a
 
 @lru_cache
 def load() -> tuple[pd.DataFrame, pd.DataFrame]:
-    actuals = pd.read_parquet(DATA / "actuals.parquet")
-    return metrics.to_hourly(actuals), pd.read_parquet(DATA / "forecasts.parquet")
-
+    a = pd.read_csv(DATA / "actuals.csv.gz")
+    f = pd.read_csv(DATA / "forecasts.csv.gz")
+    for df, cols in ((a, ["startTime"]), (f, ["startTime", "publishTime"])):
+        for c in cols:
+            df[c] = pd.to_datetime(df[c], utc=True)
+    return metrics.to_hourly(a), f
 
 def parse_cutoff(s: str) -> time:
     try:
